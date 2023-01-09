@@ -25,11 +25,11 @@ class Body extends StatelessWidget {
             SizedBox(
                 height: 84,
                 width: size.width / 2,
-                child: FlatButton(
+                child: FloatingActionButton(
                   shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.only(topLeft: Radius.circular(28))),
-                  color: kPrimaryColor,
+                  backgroundColor: kPrimaryColor,
                   onPressed: () {},
                   child: const Text('Buy Now',
                       style: TextStyle(
@@ -41,11 +41,11 @@ class Body extends StatelessWidget {
             SizedBox(
                 height: 84,
                 width: size.width / 2,
-                child: FlatButton(
+                child: FloatingActionButton(
                   shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.only(topRight: Radius.circular(28))),
-                  color: Colors.white,
+                  backgroundColor: Colors.white,
                   onPressed: () {},
                   child: const Text('Description',
                       style: TextStyle(

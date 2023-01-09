@@ -24,10 +24,10 @@ class TitleWithMoreBtn extends StatelessWidget {
             text: title,
           ),
           const Spacer(),
-          FlatButton(
+          FloatingActionButton(
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
-            color: kPrimaryColor,
+            backgroundColor: kPrimaryColor,
             onPressed: () {}, //press,
             child: const Text('More', style: TextStyle(color: Colors.white)),
           )
