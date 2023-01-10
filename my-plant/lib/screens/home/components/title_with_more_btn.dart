@@ -24,11 +24,13 @@ class TitleWithMoreBtn extends StatelessWidget {
             text: title,
           ),
           const Spacer(),
-          FloatingActionButton(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
-            backgroundColor: kPrimaryColor,
-            onPressed: () {}, //press,
+          OutlinedButton(
+            onPressed: () {},
+            style: OutlinedButton.styleFrom(
+                //primary: Colors.white,
+                backgroundColor: kPrimaryColor,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(28))),
             child: const Text('More', style: TextStyle(color: Colors.white)),
           )
         ],

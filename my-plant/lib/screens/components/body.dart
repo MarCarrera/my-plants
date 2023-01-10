@@ -20,7 +20,7 @@ class Body extends StatelessWidget {
             country: 'Russian',
             price: 110,
           ),
-          const SizedBox(height: kDefaultPadding),
+          const SizedBox(height: kDefaultPadding * 1.2),
           Row(children: <Widget>[
             SizedBox(
                 height: 84,
@@ -28,7 +28,7 @@ class Body extends StatelessWidget {
                 child: FloatingActionButton(
                   shape: const RoundedRectangleBorder(
                       borderRadius:
-                          BorderRadius.only(topLeft: Radius.circular(28))),
+                          BorderRadius.only(topRight: Radius.circular(28))),
                   backgroundColor: kPrimaryColor,
                   onPressed: () {},
                   child: const Text('Buy Now',
@@ -39,20 +39,17 @@ class Body extends StatelessWidget {
                       )),
                 )),
             SizedBox(
-              height: 84,
-              width: size.width / 2,
-              /*child: FlatButton(
+                height: 84,
+                width: size.width / 2,
+                child: FloatingActionButton(
                   shape: const RoundedRectangleBorder(
                       borderRadius:
-                          BorderRadius.only(topRight: Radius.circular(28))),
-                  color: Colors.white,
+                          BorderRadius.only(topLeft: Radius.circular(28))),
+                  backgroundColor: Colors.white,
                   onPressed: () {},
                   child: const Text('Description',
-                      style: TextStyle(
-                        fontSize: 18,
-                      )),
-                )*/
-            ),
+                      style: TextStyle(fontSize: 18, color: kPrimaryColor)),
+                )),
           ]),
           //const SizedBox(height: kDefaultPadding * 2)
         ],

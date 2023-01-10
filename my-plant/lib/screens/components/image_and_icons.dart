@@ -13,9 +13,9 @@ class ImageAndIcons extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(bottom: kDefaultPadding * 3),
+      padding: const EdgeInsets.only(bottom: kDefaultPadding),
       child: SizedBox(
-        height: size.height * 0.8,
+        height: size.height * 0.76,
         child: Row(children: <Widget>[
           Expanded(
             child: Padding(
